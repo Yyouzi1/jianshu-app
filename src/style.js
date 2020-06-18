@@ -47,4 +47,3 @@ table {
   background-color: red;
 }
 `
-

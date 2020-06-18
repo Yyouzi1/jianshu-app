@@ -1,17 +1,16 @@
 import styled from 'styled-components'
 import logoPic from '../../static/logo.png';
 export const HeaderWrapper = styled.div`
-width: 1440px;
-margin: 0 auto;
-position:relative;
-height: 58px;
-    border-bottom: 1px solid #f0f0f0
+    z-index:2;
+    position:relative;
+    height: 60px;
+    border-bottom: 1px solid #f0f0f0;
 `;
 
-export const Logo = styled.a`
+export const Logo = styled.div`
     position: absolute;
     top:0;
-    left:0;
+    left:300px;
     display:block;
     width: 100px;
     height:56px;
@@ -38,6 +37,7 @@ export const NavItem = styled.div`
     &.right {
         float: right;
         color: #969696;
+        cursor: pointer;
     };
     &.active {
         color: #ea6f5a;
@@ -98,6 +98,7 @@ export const SearchInfo = styled.div`
     top:56px;
     width:240px;
     padding:0 20px;
+    background: #fff;
     box-shadow: 0 0 8px rgba(0,0,0,.2);
 `
 
@@ -132,7 +133,7 @@ export const SearchInfoItem = styled.a`
 
 export const Addition = styled.div`
     position: absolute;
-    right:0;
+    right:200px;
     top:0;
     height:56px; 
 `;
